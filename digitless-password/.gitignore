@@ -8,6 +8,7 @@
 
 /.settings/
 
+.cache-main
 .classpath
 .project
 
