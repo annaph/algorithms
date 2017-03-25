@@ -35,5 +35,14 @@ class SolutionSuite extends FunSuite {
 
     assert(actual == expected)
   }
+  
+  test("""Check string "a0zBaaC111111aAa" """) {
+    val s = "a0zBaaC111111aAa"
+
+    val expected = 4
+    val actual = solution(s)
+
+    assert(actual == expected)
+  }
 
 }
