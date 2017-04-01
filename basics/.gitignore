@@ -1,0 +1,14 @@
+/classes/
+
+/project/*-shim.sbt
+/project/project/
+/project/target/
+
+/target/
+
+/.settings/
+
+.cache-main
+.classpath
+.project
+
