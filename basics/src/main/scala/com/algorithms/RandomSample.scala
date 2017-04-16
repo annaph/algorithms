@@ -5,7 +5,7 @@ import scala.util.Failure
 import scala.util.Success
 import scala.util.Try
 
-import com.algorithms.RNG.choose
+import com.algorithms.RNG.random
 
 object RandomSampleMain extends App {
 
@@ -42,7 +42,7 @@ object RandomSample {
       HashSet()
     else {
       val s = _sample(m - 1, n - 1)
-      val i = choose(1, n)
+      val i = random(1, n)
 
       if (s contains i)
         s += n

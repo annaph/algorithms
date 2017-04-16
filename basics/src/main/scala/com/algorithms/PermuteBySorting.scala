@@ -5,7 +5,7 @@ import scala.util.Success
 import scala.util.Try
 
 import com.algorithms.MergeSort.sort
-import com.algorithms.RNG.choose
+import com.algorithms.RNG.random
 
 object PermuteBySortingMain extends App {
   import PermuteBySorting._
@@ -43,7 +43,7 @@ object PermuteBySorting {
       for {
         i <- 0 until ar.size
       } yield {
-        val r = choose(1, ar.size * ar.size * ar.size)
+        val r = random(1, ar.size * ar.size * ar.size)
         i -> r
       }
 

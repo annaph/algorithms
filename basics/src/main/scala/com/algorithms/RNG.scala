@@ -18,7 +18,7 @@ object RNG {
 
   private var currState: RNG = SimpleRNG(12)
 
-  def choose(a: Int, b: Int): Int = {
+  def random(a: Int, b: Int): Int = {
     val (i, s) = currState.nextInt
     currState = s
 

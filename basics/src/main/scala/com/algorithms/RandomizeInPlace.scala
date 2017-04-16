@@ -4,7 +4,7 @@ import scala.util.Failure
 import scala.util.Success
 import scala.util.Try
 
-import com.algorithms.RNG.choose
+import com.algorithms.RNG.random
 
 object RandomizeInPlaceMain extends App {
 
@@ -44,7 +44,7 @@ object RandomizeInPlace {
     for {
       i <- 0 until ar.size
     } {
-      val r = choose(i, ar.size - 1)
+      val r = random(i, ar.size - 1)
       permuted = swap(ar, i, r)
     }
 
